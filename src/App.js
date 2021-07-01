@@ -24,6 +24,9 @@ class App extends Component {
                         react = {{
                             "and": ["search-component"]
                         }}
+                        sortOptions={[
+                            {label: "ランク", dataField: "rank", sortBy: "asc"}
+                        ]}
                     >
                         {({data, error, loading}) => (
                             <ResultListWrapper>
